@@ -88,6 +88,10 @@ const storyLanguages = [
     name: 'русский',
     tutorial: '/intro-to-storybook/react/ru/get-started/',
   },
+  {
+    name: 'Korean',
+    tutorial: '/intro-to-storybook/react/ko/get-started/',
+  }
 ];
 //
 // list of baseline language for the first 3 stories

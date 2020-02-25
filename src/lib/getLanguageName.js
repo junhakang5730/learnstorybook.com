@@ -6,6 +6,7 @@ const languageNameMap = {
   pt: 'Português',
   nl: 'Nederlands',
   de: 'Deutsch',
+  ko: 'Korean'
 };
 
 const getLanguageName = language => languageNameMap[language] || language;
