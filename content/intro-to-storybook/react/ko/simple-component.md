@@ -52,7 +52,7 @@ First, let’s create the task component and its accompanying story file: `src/c
 We’ll begin with a basic implementation of the `Task`, simply taking in the attributes we know we’ll need and the two actions you can take on a task (to move it between lists):
 
 <!-- ko -->
-`Task` 의 기본 즉, 우리가 앞으로 필요로할 속성을 부여하는 것과 수행할 두가지 액션 (목록간의 이동)을 구현하는 것부터 시작합니다.
+`Task` 의 기본 즉, 우리가 앞으로 필요로할 속성을 부여하는 것과 수행할 두가지 액션 (목록간의 이동)을 구현하는 것부터 시작합니다. 
 <!-- ko -->
 
 ```javascript
