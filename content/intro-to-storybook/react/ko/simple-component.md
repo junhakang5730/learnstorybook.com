@@ -148,6 +148,12 @@ Storybook에 우리가 작성중인 컴포넌트에 대해 알려주기 위해 �
 
 To define our stories, we export a function for each of our test states to generate a story. The story is a function that returns a rendered element (i.e. a component class with a set of props) in a given state---exactly like a React [Stateless Functional Component](https://reactjs.org/docs/components-and-props.html).
 
+<!-- ko -->
+스토리들을 정의하기 위해서는 각 테스트 상태들의 함수를 내보내어 스토리를 생성합니다. 
+<!-- 스토리는 주어진 상태에서 렌더링 된 요소 (즉, 소품 세트를 가진 컴포넌트 클래스)를 반환하는 함수입니다. 정확히 React Stateless Functional Component 와 같습니다 . -->
+<!-- ko -->
+
+
 `action()` allows us to create a callback that appears in the **actions** panel of the Storybook UI when clicked. So when we build a pin button, we’ll be able to determine in the test UI if a button click is successful.
 
 As we need to pass the same set of actions to all permutations of our component, it is convenient to bundle them up into a single `actionsData` variable and use React's `{...actionsData}` props expansion to pass them all at once. `<Task {...actionsData}>` is equivalent to `<Task onPinTask={actionsData.onPinTask} onArchiveTask={actionsData.onArchiveTask}>`.
