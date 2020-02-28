@@ -7,9 +7,9 @@ commit: 403f19a
 
 We’ll build our UI following a [Component-Driven Development](https://blog.hichroma.com/component-driven-development-ce1109d56c8e) (CDD) methodology. It’s a process that builds UIs from the “bottom up” starting with components and ending with screens. CDD helps you scale the amount of complexity you’re faced with as you build out the UI.
 
-<!-- 한국어 번역 -->
+<!-- ko -->
 저희는 앞으로 Component-Driven Development (CDD) 방법론에 따라 UI를 Build 할 것입니다. CDD는 "bottom up" 방식으로 Component에서 시작하여 화면에서 끝나는 UI Build 프로세스입니다. CDD 방법론은 UI를 구축할 때 전체적인 복잡도를 가늠할 수 있는 장점이 있습니다.
-<!--  -->
+<!-- ko -->
 
 ## Task
 
@@ -17,33 +17,37 @@ We’ll build our UI following a [Component-Driven Development](https://blog.hic
 
 `Task` is the core component in our app. Each task displays slightly differently depending on exactly what state it’s in. We display a checked (or unchecked) checkbox, some information about the task, and a “pin” button, allowing us to move tasks up and down the list. Putting this together, we’ll need these props:
 
-<!-- 한국어 번역 -->
+<!-- ko -->
 위에 보이는 Task는 우리 App의 핵심적인 역할을 하는 Component입니다. 각각의 Task는 자신의 상태에 따라 조금씩 다르게 생겼습니다. 우선 체크된 체크박스, task에 대한 정보, 그리고 task를 리스트의 위아래로 움직일 수 있는 'pin' 버튼이 제공되는데요, 이것들을 모두 합치려면 다음과 같은 props들을 필요로 합니다.
-<!--  -->
+<!-- ko -->
 
 - `title` – a string describing the task
 - `state` - which list is the task currently in and is it checked off?
 
-<!-- 한국어 번역 -->
+<!-- ko -->
 - `title` – task를 설명하는 문자열
 - `state` - 현재 리스트의 어느 작업이 진행중이고 완료되었는지에 대한 상태값
-<!--  -->
+<!-- ko -->
 
 As we start to build `Task`, we first write our test states that correspond to the different types of tasks sketched above. Then we use Storybook to build the component in isolation using mocked data. We’ll “visual test” the component’s appearance given each state as we go.
 
-<!-- 한국어 번역 -->
+<!-- ko -->
 우리가 `Task` 컴포넌트를 Build 하면서 우리는 우선 위에 보이는 각각의 다른 task의 타입을 나타내기 위한 상태값을 적습니다. 그리고 나서 컴포넌트를 mocked data를 사용하는 고립된 환경에서 Build 하기위해 Storybook을 사용합니다
-<!--  -->
+<!-- ko -->
 
 This process is similar to [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) that we can call “[Visual TDD](https://blog.hichroma.com/visual-test-driven-development-aec1c98bed87)”.
 
-<!-- 한국어 번역 -->
+<!-- ko -->
 이 과정은 [Visual TDD](https://blog.hichroma.com/visual-test-driven-development-aec1c98bed87)” 라고 불리는 [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)과 유사합니다
-<!--  -->
+<!-- ko -->
 
 ## Get setup
 
 First, let’s create the task component and its accompanying story file: `src/components/Task.js` and `src/components/Task.stories.js`.
+
+<!-- ko -->
+우선, task 컴포넌트와 부수적인 story file을 만들어 봅시다: `src/components/Task.js` and `src/components/Task.stories.js`.
+<!-- ko -->
 
 We’ll begin with a basic implementation of the `Task`, simply taking in the attributes we know we’ll need and the two actions you can take on a task (to move it between lists):
 
