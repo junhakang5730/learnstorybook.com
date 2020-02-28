@@ -71,7 +71,15 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
 
 Above, we render straightforward markup for `Task` based on the existing HTML structure of the Todos app.
 
+<!-- ko -->
+위의 예시에서, 우리는 Todos 앱의 기존 HTML 구조를 베이스로 `Task`를 위한 마크업을 바로 렌더합니다.
+<!-- ko -->
+
 Below we build out Task’s three test states in the story file:
+
+<!-- ko -->
+그리고 아래와같이 Task의 세가지 상태값을 story file에 build 합니다
+<!-- ko -->
 
 ```javascript
 // src/components/Task.stories.js
