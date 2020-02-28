@@ -121,6 +121,10 @@ export const Archived = () => (
 
 There are two basic levels of organization in Storybook: the component and its child stories. Think of each story as a permutation of a component. You can have as many stories per component as you need.
 
+<!-- ko -->
+스토리 북에는 기본적으로 컴포넌트와 하위 스토리 두개의 기본 레벨의 구성이 있습니다. 각 스토리를 컴포넌트의 순열이라고 생각하시면 쉽습니다. 스토리는 컴포넌트 당 필요한만큼 생성할 수 있습니다.
+<!-- ko -->
+
 - **Component**
   - Story
   - Story
@@ -128,9 +132,19 @@ There are two basic levels of organization in Storybook: the component and its c
 
 To tell Storybook about the component we are documenting, we create a `default` export that contains:
 
+<!-- ko -->
+Storybook에 우리가 작성중인 컴포넌트에 대해 알려주기 위해 우선 다음과 같은 내용을 포함하는 `default` export를 생성합니다.
+<!-- ko -->
+
 - `component` -- the component itself,
 - `title` -- how to refer to the component in the sidebar of the Storybook app,
 - `excludeStories` -- exports in the story file that should not be rendered as stories by Storybook.
+
+<!-- ko -->
+- `component` -- 해당 컴포넌트
+- `title` -- Storybook app에서 컴포넌트를 refer 할 수 있는 ????
+- `excludeStories` -- Storybook 렌더되어서는 안되는 것들을 Storybook의 story 형태로 story file 에 내보냅니다
+<!-- ko -->
 
 To define our stories, we export a function for each of our test states to generate a story. The story is a function that returns a rendered element (i.e. a component class with a set of props) in a given state---exactly like a React [Stateless Functional Component](https://reactjs.org/docs/components-and-props.html).
 
